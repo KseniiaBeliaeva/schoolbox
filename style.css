@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+.container,
+.container-fluid {
+    padding: 0;
+}
+/* fonts */
+@font-face {
+    font-family: boldFont;
+    src: url(fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: regularFont;
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: otherFont;
+    src: url(fonts/AdobeFnt20.lst);
+}
+
+/* elements */
+h3 {
+    font-family: boldFont;
+    font-size: 25px;
+}
+h4 {
+    font-family: regularFont;
+}
+h5,
+p {
+    line-height: 2;
+    font-family: regularFont;
+}
+input {
+    border: none;
+}
+label {
+    display: block;
+}
+input,
+label {
+    font-family: regularFont;
+}
+
+label,
+button,
+.text__letter-spacing {
+    text-transform: uppercase;
+}
+.container_white-bg p {
+    font-size: 80%;
+}
+.list-feature {
+    font-size: 75%;
+    color: #FFFFFE;
+    line-height: 3;
+    margin: 35px 0;
+}
+.container_text {
+    width: 60%;
+    top: 25px;
+    padding: 5% 0;
+}
+.container_textb {
+    width: 50%;
+}
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+.centered_text {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+}
+.subscribe-form,
+.container_white-bg {
+    color: #1666B0;
+}
+.subscribe-form_btn {
+    background-color: #ED4745 !important;
+    font-size: 12px !important;
+    width: 100%;
+    margin: 10px 0 0 0;
+    border: none;
+    color: white;
+    border-radius: none;
+    padding: 10px 0;
+}
+.top-background {
+    background: 
+     linear-gradient(rgb(50, 134, 248,0.85),
+     rgb(3, 124, 244, 0.71)),
+    url(links/hands-raised-sb-blue.jpg);
+    width: 100%;
+    min-height: 40vh;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.bottom-background {
+     background: linear-gradient(to right, rgb(237,77, 114, 0.76),
+     rgba(241,126, 49, 0.79)),
+     url(links/learners-sunset.jpg);
+     width: 100%;
+     position: relative;
+     bottom: 0;
+     top: 0;
+     left: 0;
+     height: 100vh;
+     background-size: 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     color: white;
+}
+
+/* centered div */
+.sign-up {
+top: 50%;
+left:50%;
+transform: translate(-50%, -50%);
+width: 33%;
+font-family: regularFont;
+}
+.sign-up_message {
+    padding: 0px 70px;
+    text-align: center;
+    font-family: boldFont;
+    font-size: 22px;
+}
+.sign-up_btn {
+    background-color: #6BE590;
+    color: white;
+    border: none;
+    border-radius: 0%;
+    font-size: 12px;
+}
+.sign-up_form {
+    display: flex;
+    align-items: flex-end;
+}
+.sign-up_email,
+.sign-up_btn {
+    height: 30px;
+
+}
+.sign-up_btn,
+.sign-up_email-container {
+    margin: 0 5px;
+
+}
+.sign-up_email-container {
+    flex-grow: 2;
+}
+.sign-up_email {
+    width: 100%;
+}
+.sign-up_btn {
+    flex-grow: 1;
+}
+
+#logo {
+    margin: 2%;
+    width: 9%;
+}
+
+.subscribe-form {
+    position: absolute;
+    width: 35%;
+    right: 5%;
+    top: 30px;
+    background-color: white;
+    padding: 12px;
+
+}
+.subscribe-form input{
+ background-color:#E6F0F7;
+ width: 100%;
+ border-radius: 4px;
+ padding: 7px;
+ margin: 0 0 10px 0;
+}
+
+.text__letter-spacing{
+    font-size:35%;
+}
+.subscribe-form label {
+    font-size:50%;
+}
+.subscribe-form label,
+.text__letter-spacing {
+    letter-spacing: 4px;
+    margin: 10px 0 0 0;
+}
+
+/* media query */
+
+@media only screen and (max-width: 980px) {
+/* top */
+ .top-background,
+ .bottom-background {
+     background-size: cover;
+     padding: 5px;
+ }
+
+    .centered_text {
+        width: 100%;
+    }
+    .container_textb {
+        width: 68%;
+        margin: 15% auto;
+    }
+    .sign-up {
+        width: 100%;
+    }
+    .sign-up_form {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        /* text-align: center; */
+    }
+    .sign-up_email {
+        margin: 0;
+    }
+    .sign-up_btn {
+        margin: 5px 0;
+        display: block;
+        width: 100%;
+    }
+    .sign-up_email-container {
+        margin: 0;
+    }
+}
+/* for desktop */
+@media only screen and (max-width: 768px) {
+    .container,
+    .container-fluid {
+        padding: 2px;
+    }
+    .centered_text {
+        width: 80%;
+    }
+
+    .subscribe-form {
+        position: unset;
+        box-shadow: 0px 1px 20px 0px;
+    }
+    .container_text,
+    .subscribe-form {
+        width: 100%;
+    }
+    .top-background {
+        height: 100vh;
+    }
+    #logo {
+        float: right;
+        width: 30%;
+    }
+    .centered_text {
+        width: 100%;
+    }
+}
+
+
